@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amigo Secreto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- IMAGEN ACTUALIZADA -->
+     
+    <img src="./asset/amigo-secreto.png" alt="ersona feliz sosteniendo un regalo"class="header-image">
+
+    <h1>Amigo Secreto</h1>
+    
+    <div class="input-container">
+      <input type="text" id="amigo" placeholder="Ingresa un nombre" onkeydown="if(event.key === 'Enter') agregarAmigo()">
+      <button onclick="agregarAmigo()">Añadir</button>
+    </div>
+
+    <div class="friends-list">
+      <h2>Participantes:</h2>
+      <ul id="listaAmigos"></ul>
+    </div>
+    
+    <div class="actions">
+      <button class="sortear-btn" onclick="sortearAmigo()">¡Sortear!</button>
+      <p id="resultado"></p>
+    </div>
+
+    <footer>
+      <p>Hecho con ❤️ para organizar sorteos</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
